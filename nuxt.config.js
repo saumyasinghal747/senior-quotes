@@ -55,7 +55,7 @@ export default {
       ogHost:'https://saumyasinghal747.github.io/senior-quotes',
       twitterCard:'summary_large_image',
       ogImage:{
-        path:'/embed-photo-large.png',
+        path:'/embed-photo-large.png?v=red',
         width:'1200',
         height:'675',
         type:'image/png'
