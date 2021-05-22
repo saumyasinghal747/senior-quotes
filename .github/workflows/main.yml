@@ -34,13 +34,12 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-      - uses: suisei-cn/actions-download-file@v1
-        id: responses  # Remember to give an ID if you need the output filename
+      - uses: saumyasinghal747/actions-download-file@v2
         name: Download the file
         with:
           url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTvGzwPs6lio3l_Dcmv1Qh-ewoj2ysIDC529G-7oKAr5Puq_cSzZQojCFT4uO13nJQP377KCOy4ErAf/pub?gid=5657398&single=true&output=csv"
           target: content/
-        
+          filename: responses.csv  # Remember to give an ID if you need the output filename
 
       - name: Generate
         run: yarn run generate
