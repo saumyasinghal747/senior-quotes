@@ -53,9 +53,9 @@ export default {
       description:'A collection of memories to send off the class of 2021 with lots of love!',
       ogHost:'https://saumyasinghal747.github.io/senior-quotes',
       ogImage:{
-        path:'/embed-photo.png',
-        width:'1110',
-        height:'494',
+        path:'/embed-photo-large.png',
+        width:'1200',
+        height:'675',
         type:'image/png'
       }
     }
