@@ -49,6 +49,9 @@ export default {
       lang: 'en'
     },
     meta:{
+      name:'Class of 2021 Send-Off',
+      description:'A collection of memories to send off the class of 2021 with lots of love!',
+      ogHost:'https://saumyasinghal.github.io/senior-quotes',
       ogImage:{
         path:'/embed-photo.png',
         width:'1110',
