@@ -1,7 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  router: {
+    base: '/senior-notes/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'senior-notes',
@@ -29,7 +31,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    ['@nuxtjs/moment', { /* module options */ }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,7 +51,11 @@ export default {
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  content: {
+    markdown: {
+      remarkPlugins: ['remark-emoji']
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
