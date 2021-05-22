@@ -53,6 +53,7 @@ export default {
       description:'A collection of memories to send off the class of 2021 with lots of love!',
       theme_color:'#10B981',
       ogHost:'https://saumyasinghal747.github.io/senior-quotes',
+      twitterCard:'summary_large_image',
       ogImage:{
         path:'/embed-photo-large.png',
         width:'1200',
