@@ -51,7 +51,7 @@ export default {
     meta:{
       name:'Class of 2021 Send-Off',
       description:'A collection of memories to send off the class of 2021 with lots of love!',
-      theme_color:'#10B981',
+      theme_color:'#B91C1B',
       ogHost:'https://saumyasinghal747.github.io/senior-quotes',
       twitterCard:'summary_large_image',
       ogImage:{

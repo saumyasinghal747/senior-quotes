@@ -7,7 +7,7 @@
       <div class="text-right text-sm pt-4 ">
         <span class="text-gray-500">{{note.name || 'Anonymous'}} - {{note.grade}}</span>
 
-        <span class="text-green-500">• {{ niceDate(note.timestamp) }}</span>
+        <span class="text-red-700">• {{ niceDate(note.timestamp) }}</span>
         </div>
     </div>
   </div>
