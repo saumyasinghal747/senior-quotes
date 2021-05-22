@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-10 lg:grid-cols-3 md:grid-cols-2 my-20 mx-20">
+  <div class="grid gap-10 lg:grid-cols-3 md:grid-cols-2 my-20 sm:mx-10 md:mx-20">
     <div
       class="px-10 py-6 col-span-1 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg transition-shadow duration-200 mx-10 md:mx-0 hover:shadow-2xl rounded-xl shadow-md"
      :key="note.timestamp" v-for="note in spsht.body">
