@@ -12,6 +12,7 @@
 body {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255,255,255, 0.0)), 
     url("https://wallpaperaccess.com/full/2897934.jpg");
+    background: back; /** for showing sean */
     min-height:100vh;
 
     background-repeat: no-repeat;
