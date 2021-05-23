@@ -1,7 +1,7 @@
 <template>
 
   <div  
-  class="mx-20 grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-20">
+  class="md:mx-20 mx-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-20">
     <card :note="note"
      :key="note.timestamp" v-for="note in spsht.body">
     
