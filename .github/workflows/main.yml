@@ -1,0 +1,51 @@
+# This is a basic workflow to help you get started with Actions
+
+name: download new data
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/5 * * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  cd:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: yarn
+      - uses: saumyasinghal747/actions-download-file@v3
+        name: Download the file
+        with:
+          url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTvGzwPs6lio3l_Dcmv1Qh-ewoj2ysIDC529G-7oKAr5Puq_cSzZQojCFT4uO13nJQP377KCOy4ErAf/pub?gid=5657398&single=true&output=csv"
+          target: content/
+          filename: responses.csv  # Remember to give an ID if you need the output filename
+
+      - name: Generate
+        run: yarn run generate
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
