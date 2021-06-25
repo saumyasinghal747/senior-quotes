@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fsenior-notes\u002F_nuxt\u002Fstatic\u002F1624664422",layout:"embed",error:a,serverRendered:true,routePath:"\u002Fembed",config:{_app:{basePath:"\u002Fsenior-notes\u002F",assetsPath:"\u002Fsenior-notes\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"c289ebf7"}}}}(null));
